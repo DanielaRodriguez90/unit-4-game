@@ -1,0 +1,17 @@
+.jumbotron{
+    background-color: white;
+    border: black solid 7px;
+}
+.game-area{
+    background: white;
+    padding: 20px;
+    border: black dashed 7px;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: palevioletred;
+}

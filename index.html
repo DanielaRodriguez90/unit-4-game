@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body background = "assets/images/backgroundgem.jpg">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display -4">
+                Crystal Collector Game!
+            </h1>
+            <hr class="my-4">
+            <p class="lead">
+                You will be given a random number at the start of the game.
+            </p>
+            <p class="lead">
+                Use the crystals to match that number without exceeding its value to <strong style="font-size: 30px" >win!</strong>
+            </p>
+        </div>
+        
+        <div class="row game-area">
+            <div class="col-md-8 crystals-area">
+                <div class="ramdon-number-box">
+                    <h3>
+                        Your Number is:
+                        <span id="randomNumber"></span>
+                    </h3>
+                </div>
+                <hr>
+                <button class="btn btn-default" id="red">
+                    <img src="assets/images/red2.png">
+                <button class="btn btn-default" id="blue">
+                    <img src="assets/images/blue2.png">
+                </button>
+                <button class="btn btn-default" id="green">
+                    <img src="assets/images/Green.png">
+                </button>
+                <button class="btn btn-default" id="yellow">
+                    <img src="assets/images/yellow.png">
+                </button>
+            </div>
+            <div class="col-md-4 stats-area">
+                <div class="total-score">
+                    <h3>
+                        Your total score:<span id="total-score-number"></span>
+                    </h3>
+                </div>
+                <br>
+                <div class="wins">
+                    <h3>
+                    Wins: <span id="winsTotal"></span>
+                    </h3>
+                </div>
+                <div class="losses">
+                    <h3>
+                        losses: <span id="lossesTotal"></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
